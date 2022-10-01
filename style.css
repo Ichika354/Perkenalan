@@ -1,0 +1,60 @@
+:root {
+    --gradient :linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: var(--gradient);
+    margin-bottom: 0%;
+    height: 100vh; 
+    background-size: 300%;
+    background-repeat: no-repeat;
+    animation: gradient-animasi 15s infinite alternate;
+}
+
+.logo {
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.footer {
+    text-align: center;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    position: fixed;
+}
+
+.link {
+    display: inline;
+    flex-direction: row; color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+@keyframes gradient-animasi {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+
